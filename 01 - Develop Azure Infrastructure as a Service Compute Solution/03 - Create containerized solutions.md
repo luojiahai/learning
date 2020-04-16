@@ -4,8 +4,7 @@
 
 ### Concept
 
-- What is [**Kubernetes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#what-is-kubernetes)?
-    - Kubernetes is a rapidly evolving platform that manages container-based applications nad their associated networking and storage components.
+- [**Kubernetes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#what-is-kubernetes) is a rapidly evolving platform that manages container-based applications nad their associated networking and storage components.
 
 - [**Kubernetes cluster architecture**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#kubernetes-cluster-architecture)
     - A Kubernetes cluster is divided into two components:
