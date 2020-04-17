@@ -84,8 +84,7 @@
 
 ### Concept
 
-- What is [**Azure Container Instances**](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview)?
-    - Containers are becoming the preferred way to package, deploy, and manage cloud applications. Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service.
+- Containers are becoming the preferred way to package, deploy, and manage cloud applications. [**Azure Container Instances**](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview) offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service.
 
 ### Resource
 
