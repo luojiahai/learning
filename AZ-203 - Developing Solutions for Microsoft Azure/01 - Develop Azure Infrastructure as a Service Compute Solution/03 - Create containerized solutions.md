@@ -72,7 +72,7 @@
     - **Image** - Store in a repository, each image is a read-only snapshot of a Docker-compatible container.
     - **Container** - A container defines a software application and its dependencies wrapped in a complete filesystem including code, runtime, system tools, and libraries.
 
-- **Azure Container Registry Tasks** (ACR Tasks) is a suite of features within Azure Container Registry that provides streamlined and effient Docker container image builds in Azure.
+- [**Azure Container Registry Tasks (ACR Tasks)**](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview) is a suite of features within Azure Container Registry that provides streamlined and effient Docker container image builds in Azure.
 
 ### Resource
 
