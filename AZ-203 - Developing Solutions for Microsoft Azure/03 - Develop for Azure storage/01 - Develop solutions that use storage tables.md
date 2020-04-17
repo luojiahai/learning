@@ -1,8 +1,6 @@
 # Develop solutions that use storage tables
 
-## Design and implement policies for tables
-
-### Concept
+## Azure Table storage overview
 
 - [**Azure Table storage**](https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview) is a service that stores structured NoSQL data in the cloud, providing a key/attribute store with a schemaless design.
 
@@ -20,6 +18,10 @@
     - **Properties** - A property is a name-value pair.
     
 - [**Introduction to Azure Cosmos DB: Table API**](https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction)
+
+## Design and implement policies for tables
+
+### Concept
     
 - [**Guidelines for table design**](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-design-guidelines)
 
