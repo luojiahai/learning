@@ -42,8 +42,6 @@
 ### Concept 
 
 - [**Durable Functions**](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview) is an extension of Azure Functions that lets you write stateful functions in a serverless compute environment.
-    - [**Supported languages**](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview#language-support)
-    - [**Application patterns**](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview#application-patterns)
 
 ### Resource
 
