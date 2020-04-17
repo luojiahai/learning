@@ -46,10 +46,6 @@
 
 ## Enable diagnostics logging
 
-### Concept
-
-- [**Enable diagnostics logging for apps in Azure App Service**](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs) - Azure provides built-in diagnostics to assist with debugging an App Service app.
-
 ### Resource
 
 - [Enable application logging (Windows)](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs#enable-application-logging-windows)
