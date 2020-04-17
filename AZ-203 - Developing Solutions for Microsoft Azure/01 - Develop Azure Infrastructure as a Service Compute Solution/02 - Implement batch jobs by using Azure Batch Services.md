@@ -4,9 +4,9 @@
 
 ### Concept
 
-- [**Run parallel workloads**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview#run-parallel-workloads) - Batch works well with intrinsically parallel (also known as "embarrassingly parallel") workloads.
+- Batch works well with [**intrinsically parallel (also known as "embarrassingly parallel") workloads**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview#run-parallel-workloads).
 
-- [**Azure Batch Service**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview) [**REST API**](https://docs.microsoft.com/en-us/rest/api/batchservice/) - The REST APIs for the Azure Batch service offer developers a means to schedule large-scale parallel and HPC applications in the cloud.
+- The [**REST APIs**](https://docs.microsoft.com/en-us/rest/api/batchservice/) for the [**Azure Batch service**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview) offer developers a means to schedule large-scale parallel and HPC applications in the cloud.
 
 - [**Azure Batch service resources**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics)
     - [**Account**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#account) - A Batch account is a uniquely identified entity within the Batch service.
@@ -20,28 +20,14 @@
     - [**Application packages**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#application-packages-1) - The application packages feature provides easy management and deployment of applications to the compute nodes in your pools.
 
 - [**Azure Batch service quotas and limits**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit)
-    - [**Resource quotas**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit#resource-quotas) - A quota is a credit limit, not a capacity guarantee.
-    - [**Pool size limits**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit#pool-size-limits) - Pool size limits are set by the Batch service.
 
 - [**Authorize with Shared Key**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key)
-    - [**Specifying the Date header**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#specifying-the-date-header) - All authorized requests must include the Coordinated Universal Time (UTC) timestamp for the request.
-    - [**Specifying the Authorization header**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#specifying-the-authorization-header) - An authorized request must include the ```Authorization``` header.
-        - [**Constructing the signature string**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#constructing-the-signature-string)
-        - [**Constructing the canonicalized headers string**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#constructing-the-canonicalized-headers-string)
-        - [**Constructing the canonicalized resource string**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#constructing-the-canonicalized-resource-string)
-        - [**Encoding the signature**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key#encoding-the-signature)
 
-- [**Batch Status and Error Codes**](https://docs.microsoft.com/en-us/rest/api/batchservice/batch-status-and-error-codes) - REST API operations for the Batch service return standard HTTP status codes, as defined in the [HTTP/1.1 Status Code Definitions](https://go.microsoft.com/fwlink/?linkid=133333).
+- [**Batch Status and Error Codes**](https://docs.microsoft.com/en-us/rest/api/batchservice/batch-status-and-error-codes)
 
 - [**Common parameters and headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers)
-    - [**Representation of Date/Time Values**](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers#BKMK_DateTime)
-        - [**Specifying Date/Time values in HTTP headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers#specifying-datetime-values-in-http-headers)
-        - [**Specifying Date/Time values in URI Parameters and Request/Response Body**](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers#specifying-datetime-values-in-uri-parameters-and-requestresponse-body)
 
 - [**Specifying conditional headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers)
-    - [**HTTP Response Codes for Operations Supporting Conditional Headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers#http-response-codes-for-operations-supporting-conditional-headers)
-        - [**Read Operations**](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers#read-operations)
-        - [**Write Operations**](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers#write-operations)
 
 ----
 
