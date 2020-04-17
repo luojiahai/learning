@@ -1,6 +1,12 @@
 # Create containerized solutions
 
-## Create an [Azure Managed Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/) cluster
+## Azure Kubernetes Service (AKS) overview
+
+- [**Azure Kubernetes Service (AKS)**](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure.
+
+- You can create an AKS cluster in the Azure portal, with the Azure CLI, or template driven deployment options such as Resource Manager templates and Terraform.
+
+## Create an Azure Managed Kubernetes Service (AKS) cluster
 
 ### Concept
 
