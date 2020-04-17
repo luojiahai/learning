@@ -20,7 +20,8 @@
     - [**Azure CLI** (Command Line Interface)](https://docs.microsoft.com/en-us/cli/azure/)
     - Programmactic (APIs)
         - [**Azure REST API**](https://docs.microsoft.com/en-us/rest/api/azure/)
-        - [**Azure Client SDK**](https://github.com/Azure/azure-sdk)\\n    - [**Azure VM Extensions**](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/overview)
+        - [**Azure Client SDK**](https://github.com/Azure/azure-sdk)
+        - [**Azure VM Extensions**](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/overview)
     - [**Azure Automation Services**](https://azure.microsoft.com/en-us/services/automation/)
     
 - [**Availability**](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/availability) is the percentage of time a service is available for use.
