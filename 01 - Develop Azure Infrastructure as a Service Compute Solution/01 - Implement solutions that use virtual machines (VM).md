@@ -67,7 +67,7 @@
 - [**Encryption**](https://docs.microsoft.com/en-us/windows/win32/seccrypto/data-encryption-and-decryption) is the process of translating plain text data (plaintext) into something that appears to be random and meaningless (ciphertext). Decryption is the process of converting ciphertext back to plaintext.
     - **Symmetric encryption** - Encryption that uses a single key for both encryption and decryption. Symmetric encryption is preferred when encrypting large amounts of data. Some of the more common symmetric encryption algorithms are RC2, RC4, and Data Encryption Standard (DES).
     - **Asymmetric encryption** - An asymmetric cipher that uses two keys, one for encryption, the public key, and the other for decryption, the private key.
-- Key management - In Azure, your encryption keys can be managed by Microsoft or the customer.
+- [**Key management**](https://docs.microsoft.com/en-us/azure/security/fundamentals/encryption-overview) - In Azure, your encryption keys can be managed by Microsoft or the customer.
 - The main encryption-based disk protection technologies for Azure VMs are:
     - [**Storage Service Encryption (SSE)**](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption)
     - **Azure Disk Encryption (ADE)** ([Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-overview), [Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-overview))
