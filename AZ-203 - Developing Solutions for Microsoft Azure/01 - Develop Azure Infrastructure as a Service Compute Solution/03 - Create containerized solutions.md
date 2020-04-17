@@ -13,7 +13,7 @@
 - [**Kubernetes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#what-is-kubernetes) is a rapidly evolving platform that manages container-based applications nad their associated networking and storage components.
 
 - A [**Kubernetes cluster**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#kubernetes-cluster-architecture) is divided into two components:
-    -[ **Control plane**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#control-plane) nodes provide the core Kubernetes services and orchestration of application workloads.
+    - [ **Control plane**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#control-plane) nodes provide the core Kubernetes services and orchestration of application workloads.
     - [**Nodes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) run your application workloads.
 
 - [**Pods**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#pods) - Kubernetes uses *pods* to run an instance of your application. A pod represents a single instance of your application.
