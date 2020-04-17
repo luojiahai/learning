@@ -7,15 +7,6 @@
 - The [**REST APIs**](https://docs.microsoft.com/en-us/rest/api/batchservice/) for the [**Azure Batch service**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview) offer developers a means to schedule large-scale parallel and HPC applications in the cloud.
 
 - [**Azure Batch service resources**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics)
-    - [**Account**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#account) - A Batch account is a uniquely identified entity within the Batch service.
-    - [**Azure Storage account**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#azure-storage-account) - Most Batch solutions are Azure Storage for storing resource files and output files.
-    - [**Compute node**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#compute-node) - A compute node is an Azure virtual machine (VM) or cloud service VM that is dedicated to processing a portion of your application's workload.
-    - [**Pool**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#pool) - A pool is a collection of nodes that your application runs on.
-    - [**Compute node type and target number of nodes**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#pool)
-        - **Dedicated compute nodes** are reserved for your workloads. They are more expensive than low-priority nodes, but they are guaranteed to never be preempted.
-        - **Low-priority nodes** take advantage of surplus capacity in Azure to run your Batch workloads.
-    - [**Job**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#job) - A job is a collection of tasks.
-    - [**Application packages**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#application-packages-1) - The application packages feature provides easy management and deployment of applications to the compute nodes in your pools.
 
 - [**Azure Batch service quotas and limits**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit)
 
