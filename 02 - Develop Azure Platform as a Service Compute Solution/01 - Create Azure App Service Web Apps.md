@@ -23,7 +23,7 @@
     - [**What if my app needs more capabilities or features?**](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans#what-if-my-app-needs-more-capabilities-or-features)
     - [**Should I put an app in a new plan or an existing plan?**](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans#should-i-put-an-app-in-a-new-plan-or-an-existing-plan)
 
-- [**Authentication and authorization in Azure App Service and Azure Functions**](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) - Azure App Service provides built-in authentication and authorization support, so you can sign in users and access data by writing minimal or no code in your web app, RESTful API, and mobile back end, and also [**Azure Functions**](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview).
+- Azure App Service provides built-in [**authentication and authorization**](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) support, so you can sign in users and access data by writing minimal or no code in your web app, RESTful API, and mobile back end, and also [**Azure Functions**](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview).
     - [**How it works**](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#how-it-works)
     - [**Identity providers**](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#identity-providers)
     - [**Authentication flow**](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#authentication-flow)
