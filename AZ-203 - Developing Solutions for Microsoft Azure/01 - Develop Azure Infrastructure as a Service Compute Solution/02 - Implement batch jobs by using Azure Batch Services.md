@@ -21,15 +21,15 @@
 
 ## Manage batch jobs by using Batch Service API
 
-### Concept
+### Resource
 
-- [**Authorize with Shared Key**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key)
+- [Authorize with Shared Key](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key)
 
-- [**Batch Status and Error Codes**](https://docs.microsoft.com/en-us/rest/api/batchservice/batch-status-and-error-codes)
+- [Batch Status and Error Codes](https://docs.microsoft.com/en-us/rest/api/batchservice/batch-status-and-error-codes)
 
-- [**Common parameters and headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers)
+- [Common parameters and headers](https://docs.microsoft.com/en-us/rest/api/batchservice/common-parameters-and-headers)
 
-- [**Specifying conditional headers**](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers)
+- [Specifying conditional headers](https://docs.microsoft.com/en-us/rest/api/batchservice/specifying-conditional-headers)
 
 ----
 
