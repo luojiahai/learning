@@ -1,8 +1,6 @@
 # Implement batch jobs by using Azure Batch Services
 
-## Manage batch jobs by using Batch Service API
-
-### Concept
+## Azure Batch overview
 
 - Batch works well with [**intrinsically parallel (also known as "embarrassingly parallel") workloads**](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview#run-parallel-workloads).
 
@@ -20,6 +18,10 @@
     - [**Application packages**](https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#application-packages-1) - The application packages feature provides easy management and deployment of applications to the compute nodes in your pools.
 
 - [**Azure Batch service quotas and limits**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit)
+
+## Manage batch jobs by using Batch Service API
+
+### Concept
 
 - [**Authorize with Shared Key**](https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key)
 
