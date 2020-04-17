@@ -1,5 +1,16 @@
 # Implement solutions that use virtual machines (VM)
 
+## Azure Virtual Machines overview
+
+- [**Azure Virtual Machines (VM)**](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/overview) is one of several types of [on-demand, scalable computing resources](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree) that Azure offers.
+
+- An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs it.
+
+- Azure virtual machines can be used in various ways. Some examples are:
+    - **Development and test**
+    - **Applications in the cloud**
+    - **Extended datacenter**
+
 ## Provision VMs
 
 ### Concept
