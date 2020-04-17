@@ -1,8 +1,6 @@
 # Create Azure App Service API apps
 
-## Create an Azure App Service API app
-
-### Concept
+## Azure App Service API apps overview
 
 - [**API Management**](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts) helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
 
@@ -14,6 +12,10 @@
     - **Version**
     - **Revision**
     - **Developer portal**
+    
+----
+
+## Create an Azure App Service API app
 
 ### Resource
 
