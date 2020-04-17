@@ -1,8 +1,6 @@
 # Create Azure App Service Web Apps
 
-## Create an Azure App Service Web App
-
-### Concept
+## Azure App Service overview
 
 - [**Azure App Service**](https://docs.microsoft.com/en-us/azure/app-service/overview) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.
 
@@ -23,6 +21,10 @@
 - [**Azure App Service Local Cache**](https://docs.microsoft.com/en-us/azure/app-service/overview-local-cache)
 
 - The [**Azure App Service Environment**](https://docs.microsoft.com/en-us/azure/app-service/environment/intro) is an Azure App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale.
+
+----
+
+## Create an Azure App Service Web App
 
 ### Resource
 
