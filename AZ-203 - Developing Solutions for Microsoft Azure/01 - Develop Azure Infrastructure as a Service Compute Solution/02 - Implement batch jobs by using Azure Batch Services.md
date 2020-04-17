@@ -44,15 +44,8 @@
 
 ## Write code to run an Azure Batch Services batch job
 
-### Concept
-
-- [**Batch Management client library**](https://docs.microsoft.com/en-us/azure/batch/batch-management-dotnet)
-    - [**Create and delete Batch accounts**](https://docs.microsoft.com/en-us/azure/batch/batch-management-dotnet#create-and-delete-batch-accounts) within any region.
-    - [**Retrieve and regenerate account keys**](https://docs.microsoft.com/en-us/azure/batch/batch-management-dotnet#retrieve-and-regenerate-account-keys) programmatically for any of your Batch accounts.
-    - [**Check account quotas**](https://docs.microsoft.com/en-us/azure/batch/batch-management-dotnet#check-azure-subscription-and-batch-account-quotas) and take the trial-and-error guesswork out of determining which Batch accounts have what limits.
-    - **Combine features of other Azure services** for a full-featured management experience--by using Batch Management .NET, Azure Active Directory, and the Azure Resource Manager together in the same application.
-
 ### Resource
 
+- [Manage Batch accounts and quotas with the Batch Management client library for .NET](https://docs.microsoft.com/en-us/azure/batch/batch-management-dotnet)
 - [Create a Batch account with the Azure portal](https://docs.microsoft.com/en-us/azure/batch/batch-account-create-portal)
 - [AccountManagement sample project](https://github.com/Azure-Samples/azure-batch-samples/tree/master/CSharp/AccountManagement)
