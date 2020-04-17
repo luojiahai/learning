@@ -13,24 +13,8 @@
 - [**Kubernetes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#what-is-kubernetes) is a rapidly evolving platform that manages container-based applications nad their associated networking and storage components.
 
 - A [**Kubernetes cluster**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#kubernetes-cluster-architecture) is divided into two components:
-    - **Control plane** nodes provide the core Kubernetes services and orchestration of application workloads.
-    - **Nodes** run your application workloads.
-
-- [**Control plane**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#control-plane) - When you create an AKS cluster, a control plane is automatically created and configured.
-    - The control plane includes the following core Kubernetes components:
-        - **kube-apiserver** - The API server is how the underlying Kubernetes APIs are exposed. This component provides the interaction for management tools, such as ```kubectl``` or the Kubernetes dashboard.
-        - **etcd** - To maintain the state of your Kubernetes cluster and configuration, the highly available etcd is a key value store within Kubernetes.
-        - **kube-scheuler** - When you create or scale applications, the Scheduler determines what nodes can run the workload and starts them.
-        - **kube-controller-manager** - The Controller Manager oversees a number of smaller Controllers that perform actions such as replicating pods and handling node operations.
-
-- [**Nodes and node pools**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) - To run your applications and supporting services, you need a Kubernetes node. 
-    - An AKS cluster has one or more nodes, which is an Azure virtual machine (VM) that runs the Kubernetes node components and container runtime:
-        - The ```kubelet``` is the Kubernetes agent that processes the orchestration requests from the control plane and scheduling of running the requested containers.
-        - Virtual networking is handled by the *kube-proxy* on each node. The proxy routes network traffic and manages IP addressing for services and pods.
-        - The *container runtime* is the component that allows containerized applications to run and interact with additional resources such as the virtual network and storage. In AKS, Moby is used as the container runtime.
-    - [**Resource reservations**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#resource-reservations) - Node resources are utilized by AKS to make the node function as part of your cluster.
-    - [**Node pools**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#node-pools) - Nodes of the same configuration are grouped together into *node pools*.
-    - [**Node selectors**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#node-selectors) - In an AKS cluster that contains multiple node pools, you may need to tell the Kubernetes Scheduler which node pool to use for a given resource.
+    -[ **Control plane**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#control-plane) nodes provide the core Kubernetes services and orchestration of application workloads.
+    - [**Nodes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) run your application workloads.
 
 - [**Pods**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#pods) - Kubernetes uses *pods* to run an instance of your application. A pod represents a single instance of your application.
 
