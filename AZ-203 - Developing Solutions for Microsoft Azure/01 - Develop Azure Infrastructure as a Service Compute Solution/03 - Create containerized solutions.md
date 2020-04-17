@@ -19,10 +19,6 @@
 - [**Pods**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#pods) - Kubernetes uses *pods* to run an instance of your application. A pod represents a single instance of your application.
 
 - [**Deployments and YAML manifests**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests) - A *deployment* represents one or more identical pods, managed by the Kubernetes Deployment Controller.
-    - [**Package management with Helm**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#package-management-with-helm)
-    - [**StatefulSets and DaemonSets**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets-and-daemonsets)
-        - [**StatefulSets**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#statefulsets) - Maintain the state of applications beyond an individual pod lifecycle, such as storage.
-        - [**DaemonSets**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#daemonsets) - Ensure a running instance on each node, early in the Kubernetes bootstrap process.
 
 - [**Namespaces**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#namespaces) - Kubernetes resources, such as pods and Deployments, are logically grouped into a *namespace*.
 
