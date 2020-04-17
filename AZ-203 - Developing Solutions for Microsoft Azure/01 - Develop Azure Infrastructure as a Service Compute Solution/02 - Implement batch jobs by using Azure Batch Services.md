@@ -19,6 +19,8 @@
 
 - [**Azure Batch service quotas and limits**](https://docs.microsoft.com/en-us/azure/batch/batch-quota-limit)
 
+----
+
 ## Manage batch jobs by using Batch Service API
 
 ### Resource

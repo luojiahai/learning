@@ -11,6 +11,8 @@
     - **Applications in the cloud**
     - **Extended datacenter**
 
+----
+
 ## Provision VMs
 
 ### Concept

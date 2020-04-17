@@ -1,6 +1,6 @@
 # Create Azure App Service mobile apps
 
-## About mobile apps in App Service
+## Mobile apps in App Service overview
 
 - [**Azure App Service**](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-value-prop) is a fully managed platform as a service (PaaS) offering for professional developers. The service brings a rich set of capabilities to web, mobile, and integration scenarios.
 

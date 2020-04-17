@@ -1,6 +1,6 @@
 # Implement Azure functions
 
-## An introduction to Azure Functions
+## Azure Functions overview
 
 - [**Azure Functions**](https://docs.microsoft.com/en-in/azure/azure-functions/functions-overview) allows you to run small pieces of code (called "functions") without worrying about application infrastructure.
 

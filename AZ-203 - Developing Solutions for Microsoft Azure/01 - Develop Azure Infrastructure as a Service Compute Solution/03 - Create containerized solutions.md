@@ -6,6 +6,8 @@
 
 - You can create an AKS cluster in the Azure portal, with the Azure CLI, or template driven deployment options such as Resource Manager templates and Terraform.
 
+----
+
 ## Create an Azure Managed Kubernetes Service (AKS) cluster
 
 ### Concept
