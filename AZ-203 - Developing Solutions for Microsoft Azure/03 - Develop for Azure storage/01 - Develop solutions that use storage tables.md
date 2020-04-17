@@ -47,3 +47,7 @@
 ----
 
 ## Implement partitioning schemes
+
+### Resource
+
+- [Horizontal, vertical, and functional data partitioning](https://docs.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning)
