@@ -6,10 +6,9 @@
 
 - [**Kubernetes**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#what-is-kubernetes) is a rapidly evolving platform that manages container-based applications nad their associated networking and storage components.
 
-- [**Kubernetes cluster architecture**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#kubernetes-cluster-architecture)
-    - A Kubernetes cluster is divided into two components:
-        - **Control plane** nodes provide the core Kubernetes services and orchestration of application workloads.
-        - **Nodes** run your application workloads.
+- A [**Kubernetes cluster**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#kubernetes-cluster-architecture) is divided into two components:
+    - **Control plane** nodes provide the core Kubernetes services and orchestration of application workloads.
+    - **Nodes** run your application workloads.
 
 - [**Control plane**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#control-plane) - When you create an AKS cluster, a control plane is automatically created and configured.
     - The control plane includes the following core Kubernetes components:
