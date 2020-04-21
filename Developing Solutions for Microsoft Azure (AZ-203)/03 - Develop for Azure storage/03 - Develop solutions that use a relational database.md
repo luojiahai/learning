@@ -17,9 +17,17 @@
 
 ## Provision and configure relational databases
 
+### Resource
+
+- [Quickstart: Create an Azure SQL Database single database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-get-started)
+
 ----
 
 ## Configure elastic pools for Azure SQL Database
+
+Resource
+
+- [Manage elastic pools in Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-manage)
 
 ----
 
