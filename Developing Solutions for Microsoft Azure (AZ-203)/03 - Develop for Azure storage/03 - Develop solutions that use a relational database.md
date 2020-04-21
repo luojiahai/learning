@@ -37,6 +37,12 @@
 
 ## Provision and configure Azure SQL Database serverless instances
 
+### Resource
+
+- [Azure SQL Database serverless](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless)
+
 ----
 
 ## Provision and configure Azure SQL and Azure PostgreSQL Hyperscale instances
+
+- [Hyperscale service tier](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tier-hyperscale)
