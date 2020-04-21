@@ -12,6 +12,10 @@
 
 ## Create, read, update, and delete data by using appropriate APIs
 
+### Resource
+
+- [Azure Cosmos DB documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/)
+
 ----
 
 ## Implement partitioning schemes
