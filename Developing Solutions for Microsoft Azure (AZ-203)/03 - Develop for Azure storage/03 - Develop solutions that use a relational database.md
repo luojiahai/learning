@@ -25,7 +25,7 @@
 
 ## Configure elastic pools for Azure SQL Database
 
-Resource
+### Resource
 
 - [Manage elastic pools in Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool-manage)
 
