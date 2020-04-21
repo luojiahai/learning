@@ -61,3 +61,5 @@
 ### Concept
 
 - Azure Storage always stores multiple copies of your data so that it is protected from planned and unplanned events, including transient hardware failures, network or power outages, and massive natural disasters. [**Redundancy**](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy) ensures that your storage account meets the Service-Level Agreement (SLA) for Azure Storage even in the face of failures.
+
+- [**Geo-zone-redundant storage (GZRS)**](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#geo-zone-redundant-storage-preview) (preview) combines the high availability provided by redundancy across availability zones with protection from regional outages provided by geo-replication.
