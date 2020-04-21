@@ -45,4 +45,6 @@
 
 ## Provision and configure Azure SQL and Azure PostgreSQL Hyperscale instances
 
+### Resource
+
 - [Hyperscale service tier](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tier-hyperscale)
