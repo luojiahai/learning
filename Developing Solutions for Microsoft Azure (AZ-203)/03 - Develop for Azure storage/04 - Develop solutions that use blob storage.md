@@ -50,6 +50,14 @@
 
 ## Implement data archiving and retention
 
+### Concept
+
+- The [**archive access tier**](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers#archive-access-tier) has the lowest storage cost. But it has higher data retrieval costs compared to the hot and cool tiers. Data in the archive tier can take several hours to retrieve. Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge.
+
 ----
 
 ## Implement Geo Zone Redundant Storage
+
+### Concept
+
+- Azure Storage always stores multiple copies of your data so that it is protected from planned and unplanned events, including transient hardware failures, network or power outages, and massive natural disasters. [**Redundancy**](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy) ensures that your storage account meets the Service-Level Agreement (SLA) for Azure Storage even in the face of failures.
