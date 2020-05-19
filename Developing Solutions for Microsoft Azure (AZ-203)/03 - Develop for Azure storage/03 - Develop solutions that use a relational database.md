@@ -33,6 +33,10 @@
 
 ## Create, read, update, and delete data tables by using code
 
+### Resource
+
+- [Quickstart: Create an Azure SQL Database single database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-get-started)
+
 ----
 
 ## Provision and configure Azure SQL Database serverless instances
