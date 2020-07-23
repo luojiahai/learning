@@ -86,6 +86,9 @@
 
         # Verify the encryption process
         Get-AzVmDiskEncryptionStatus -VMName MyVM -ResourceGroupName MyResourceGroup
+
+        # Clean up resources
+        Remove-AzResourceGroup -Name "myResourceGroup"
         ```
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart)
         ```
@@ -108,10 +111,14 @@
 
         # Verify the encryption process
         az vm show --name "myVM" -g "MyResourceGroup"
+
+        # Clean up resources
+        az group delete --name "myResourceGroup"
         ```
 
 ### Implement batch jobs by using Azure Batch Services
 - manage batch jobs by using Batch Service API
+    - [Azure Batch Service REST API Reference](https://docs.microsoft.com/en-us/rest/api/batchservice/)
 - run a batch job by using Azure CLI, Azure portal, and other tools
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/batch/quick-create-cli)
         ```
@@ -185,6 +192,7 @@
 
         # Clean up resources
         az batch pool delete --pool-id mypool
+        az group delete --name myResourceGroup
         ```
     - [.NET](https://docs.microsoft.com/en-us/azure/batch/quick-run-dotnet)
         ```
@@ -229,12 +237,111 @@
         }
         ```
 - write code to run an Azure Batch Services batch job
+    - [Azure Batch Samples](https://github.com/Azure-Samples/azure-batch-samples)
 
 ### Create containerized solutions
 - create an Azure Managed Kubernetes Service (AKS) cluster
+    - [Azure PowerShell](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-powershell)
+        ```
+        # Create a resource group
+        New-AzResourceGroup -Name myResourceGroup -Location eastus
+
+        # Create AKS cluster
+        New-AzAks -ResourceGroupName myResourceGroup -Name myAKSCluster -NodeCount 1
+
+        # Connect to the cluster
+        Install-AzAksKubectl
+        Import-AzAksCredential -ResourceGroupName myResourceGroup -Name myAKSCluster
+        .\kubectl get nodes
+        
+        # Run the application - with a Kubernetes manifest file
+        .\kubectl apply -f azure-vote.yaml
+
+        # Test the application
+        .\kubectl get service azure-vote-front --watch
+
+        # Delete the cluster
+        Remove-AzResourceGroup -Name myResourceGroup
+        ```
+    - [Azure CLI](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough)
+        ```
+        # Create a resource group
+        az group create --name myResourceGroup --location eastus
+
+        # Create AKS cluster
+        az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
+
+        # Connect to the cluster
+        az aks install-cli
+        az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+        kubectl get nodes
+
+        # Run the application - with a Kubernetes manifest file
+        kubectl apply -f azure-vote.yaml
+
+        # Test the application
+        kubectl get service azure-vote-front --watch
+
+        # Delete the cluster
+        az group delete --name myResourceGroup --yes --no-wait
+        ```
 - create container images for solutions
+    - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app)
+        ```
+        # Build the container image - with a Dockerfile
+        docker build ./aci-helloworld -t aci-tutorial-app
+
+        # View the built images
+        docker images
+
+        # Run the container locally
+        docker run -d -p 8080:80 aci-tutorial-app
+        ```
 - publish an image to the Azure Container Registry
+    - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr)
+        ```
+        # Create a resource group
+        az group create --name myResourceGroup --location eastus
+
+        # Create Azure container registry
+        az acr create --resource-group myResourceGroup --name <acrName> --sku Basic
+
+        # Log in to container registry
+        az acr login --name <acrName>
+
+        # Show login server name
+        az acr show --name <acrName> --query loginServer --output table
+
+        # Tag container image
+        docker tag aci-tutorial-app <acrLoginServer>/aci-tutorial-app:v1
+
+        # Push image to Azure Container Registry
+        docker push <acrLoginServer>/aci-tutorial-app:v1
+        
+        # List images in Azure Container Registry
+        az acr repository list --name <acrName> --output table
+        ```
 - run containers by using Azure Container Instance or AKS
+    - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app)
+        ```
+        # Get registry credentials
+        az acr show --name <acrName> --query loginServer
+
+        # Deploy container
+        az container create --resource-group myResourceGroup --name aci-tutorial-app --image <acrLoginServer>/aci-tutorial-app:v1 --cpu 1 --memory 1 --registry-login-server <acrLoginServer> --registry-username <service-principal-ID> --registry-password <service-principal-password> --dns-name-label <aciDnsLabel> --ports 80
+
+        # Verify deployment progress
+        az container show --resource-group myResourceGroup --name aci-tutorial-app --query instanceView.state
+
+        # View the application
+        az container show --resource-group myResourceGroup --name aci-tutorial-app --query ipAddress.fqdn
+
+        # View the container logs
+        az container logs --resource-group myResourceGroup --name aci-tutorial-app
+
+        # Clean up resources
+        az group delete --name myResourceGroup
+        ```
 
 ## Develop Azure Platform as a Service Compute Solution (20-25%)
 
