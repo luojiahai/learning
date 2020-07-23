@@ -113,6 +113,121 @@
 ### Implement batch jobs by using Azure Batch Services
 - manage batch jobs by using Batch Service API
 - run a batch job by using Azure CLI, Azure portal, and other tools
+    - [Azure CLI](https://docs.microsoft.com/en-us/azure/batch/quick-create-cli)
+        ```
+        # Create a resource group
+        az group create \
+        --name myResourceGroup \
+        --location eastus2
+
+        # Create a storage account
+        az storage account create \
+        --resource-group myResourceGroup \
+        --name mystorageaccount \
+        --location eastus2 \
+        --sku Standard_LRS
+
+        # Create a Batch account
+        az batch account create \
+        --name mybatchaccount \
+        --storage-account mystorageaccount \
+        --resource-group myResourceGroup \
+        --location eastus2
+
+        # Authenticate with Batch
+        az batch account login \
+        --name mybatchaccount \
+        --resource-group myResourceGroup \
+        --shared-key-auth
+
+        # Create a pool of compute nodes
+        az batch pool create \
+        --id mypool --vm-size Standard_A1_v2 \
+        --target-dedicated-nodes 2 \
+        --image canonical:ubuntuserver:16.04-LTS \
+        --node-agent-sku-id "batch.node.ubuntu 16.04" 
+
+        # Shows all the properties of the pool
+        az batch pool show --pool-id mypool \
+        --query "allocationState"
+
+        # Create a job
+        az batch job create \
+        --id myjob \
+        --pool-id mypool
+
+        # Create tasks
+        for i in {1..4}
+        do
+        az batch task create \
+            --task-id mytask$i \
+            --job-id myjob \
+            --command-line "/bin/bash -c 'printenv | grep AZ_BATCH; sleep 90s'"
+        done
+
+        # View task status
+        az batch task show \
+        --job-id myjob \
+        --task-id mytask1
+
+        # View task output
+        az batch task file list \
+        --job-id myjob \
+        --task-id mytask1 \
+        --output table
+
+        # Download one of the output files
+        az batch task file download \
+        --job-id myjob \
+        --task-id mytask1 \
+        --file-path stdout.txt \
+        --destination ./stdout.txt
+
+        # Clean up resources
+        az batch pool delete --pool-id mypool
+        ```
+    - [.NET](https://docs.microsoft.com/en-us/azure/batch/quick-run-dotnet)
+        ```
+        # Create a pool of compute nodes
+        CloudPool pool = batchClient.PoolOperations.CreatePool(
+            poolId: PoolId,
+            targetDedicatedComputeNodes: PoolNodeCount,
+            virtualMachineSize: PoolVMSize,
+            virtualMachineConfiguration: vmConfiguration);
+
+        pool.Commit();
+
+        # Create a Batch job
+        CloudJob job = batchClient.JobOperations.CreateJob();
+        job.Id = JobId;
+        job.PoolInformation = new PoolInformation { PoolId = PoolId };
+
+        job.Commit();
+
+        # Create tasks
+        for (int i = 0; i < inputFiles.Count; i++)
+        {
+            string taskId = String.Format("Task{0}", i);
+            string inputFilename = inputFiles[i].FilePath;
+            string taskCommandLine = String.Format("cmd /c type {0}", inputFilename);
+
+            CloudTask task = new CloudTask(taskId, taskCommandLine);
+            task.ResourceFiles = new List<ResourceFile> { inputFiles[i] };
+            tasks.Add(task);
+        }
+
+        batchClient.JobOperations.AddTask(JobId, tasks);
+
+        # View task output
+        foreach (CloudTask task in completedtasks)
+        {
+            string nodeId = String.Format(task.ComputeNodeInformation.ComputeNodeId);
+            Console.WriteLine("Task: {0}", task.Id);
+            Console.WriteLine("Node: {0}", nodeId);
+            Console.WriteLine("Standard out:");
+            Console.WriteLine(task.GetNodeFile(Constants.StandardOutFileName).ReadAsString());
+        }
+        ```
 - write code to run an Azure Batch Services batch job
 
 ### Create containerized solutions
