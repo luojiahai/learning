@@ -5,7 +5,7 @@
 ### Implement solutions that use virtual machines (VM)
 - provision VMs
     - [Azure PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell)
-        ```
+        ```azurepowershell-interactive
         # Create a resource group
         New-AzResourceGroup -Name "myResourceGroup" -Location "EastUS"
 
@@ -30,7 +30,7 @@
         Remove-AzResourceGroup -Name "myResourceGroup"
         ```
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
-        ```
+        ```azurecli
         # Create a resource group
         az group create --name myResourceGroup --location eastus
 
@@ -50,7 +50,7 @@
         ```
 - create ARM templates
     - [Azure PowerShell](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=PowerShell)
-        ```
+        ```azurepowershell-interactive
         # Deploy the template
         New-AzResourceGroup -Name arm-vscode -Location eastus
         New-AzResourceGroupDeployment -ResourceGroupName arm-vscode -TemplateFile ./azuredeploy.json -TemplateParameterFile ./azuredeploy.parameters.json
@@ -59,7 +59,7 @@
         Remove-AzResourceGroup -Name arm-vscode
         ```
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI)
-        ```
+        ```azurecli
         # Deploy the template
         az group create --name arm-vscode --location eastus
         az deployment group create --resource-group arm-vscode --template-file azuredeploy.json --parameters azuredeploy.parameters.json
@@ -69,7 +69,7 @@
         ```
 - configure Azure Disk Encryption for VMs
     - [Azure PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart)
-        ```
+        ```azurepowershell-interactive
         # Create a resource group
         New-AzResourceGroup -Name "myResourceGroup" -Location "EastUS"
 
@@ -91,7 +91,7 @@
         Remove-AzResourceGroup -Name "myResourceGroup"
         ```
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart)
-        ```
+        ```azurecli
         # Create a resource group
         az group create --name "myResourceGroup" --location "eastus"
 
@@ -121,7 +121,7 @@
     - [Azure Batch Service REST API Reference](https://docs.microsoft.com/en-us/rest/api/batchservice/)
 - run a batch job by using Azure CLI, Azure portal, and other tools
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/batch/quick-create-cli)
-        ```
+        ```azurecli
         # Create a resource group
         az group create \
         --name myResourceGroup \
@@ -195,7 +195,7 @@
         az group delete --name myResourceGroup
         ```
     - [.NET](https://docs.microsoft.com/en-us/azure/batch/quick-run-dotnet)
-        ```
+        ```csharp
         # Create a pool of compute nodes
         CloudPool pool = batchClient.PoolOperations.CreatePool(
             poolId: PoolId,
@@ -242,7 +242,7 @@
 ### Create containerized solutions
 - create an Azure Managed Kubernetes Service (AKS) cluster
     - [Azure PowerShell](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-powershell)
-        ```
+        ```azurepowershell-interactive
         # Create a resource group
         New-AzResourceGroup -Name myResourceGroup -Location eastus
 
@@ -264,7 +264,7 @@
         Remove-AzResourceGroup -Name myResourceGroup
         ```
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough)
-        ```
+        ```azurecli
         # Create a resource group
         az group create --name myResourceGroup --location eastus
 
@@ -287,7 +287,7 @@
         ```
 - create container images for solutions
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app)
-        ```
+        ```azurecli
         # Build the container image - with a Dockerfile
         docker build ./aci-helloworld -t aci-tutorial-app
 
@@ -299,7 +299,7 @@
         ```
 - publish an image to the Azure Container Registry
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr)
-        ```
+        ```azurecli
         # Create a resource group
         az group create --name myResourceGroup --location eastus
 
@@ -323,7 +323,7 @@
         ```
 - run containers by using Azure Container Instance or AKS
     - [Azure CLI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app)
-        ```
+        ```azurecli
         # Get registry credentials
         az acr show --name <acrName> --query loginServer
 
