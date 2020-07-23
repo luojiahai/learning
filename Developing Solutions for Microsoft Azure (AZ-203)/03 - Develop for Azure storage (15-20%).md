@@ -161,7 +161,7 @@
     ```
 #### implement blob leasing
 - [az storage blob lease](https://docs.microsoft.com/en-us/cli/azure/storage/blob/lease)
-    ```
+    ```azurecli
     # Requests a new lease.
     az storage blob lease acquire
 
