@@ -114,6 +114,8 @@
     az group delete --name "myResourceGroup"
     ```
 
+---
+
 ### Implement batch jobs by using Azure Batch Services
 #### manage batch jobs by using Batch Service API
 - [Azure Batch Service REST API Reference](https://docs.microsoft.com/en-us/rest/api/batchservice/)
@@ -236,6 +238,8 @@
     ```
 #### write code to run an Azure Batch Services batch job
 - [Azure Batch Samples](https://github.com/Azure-Samples/azure-batch-samples)
+
+---
 
 ### Create containerized solutions
 #### create an Azure Managed Kubernetes Service (AKS) cluster
