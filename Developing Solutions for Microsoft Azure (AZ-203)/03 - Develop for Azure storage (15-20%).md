@@ -43,6 +43,8 @@
 #### set the appropriate consistency level for operations
 - [Choose the right consistency level](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels-choosing)
 
+---
+
 ### Develop solutions that use a relational database
 #### provision and configure relational databases
 - [Create an Azure SQL Database single database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart)
@@ -134,6 +136,8 @@
 - [Azure SQL Database serverless](https://docs.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview)
 #### provision and configure Azure SQL and Azure PostgreSQL Hyperscale instances
 - [Hyperscale service tier](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale)
+
+---
 
 ### Develop solutions that use blob storage
 #### move items in Blob storage between storage accounts or containers

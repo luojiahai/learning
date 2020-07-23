@@ -47,6 +47,8 @@
 #### implement Microsoft identity platform
 - [Microsoft identity platform overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
 
+---
+
 ### Implement access control
 #### implement CBAC (Claims-Based Access Control) authorization
 #### implement RBAC (Role-Based Access Control) authorization
@@ -91,6 +93,8 @@
     ```
 #### create shared access signatures
 - [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
+
+---
 
 ### Implement secure data solutions
 #### encrypt and decrypt data at rest and in transit

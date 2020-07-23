@@ -12,6 +12,8 @@
 #### monitor service health by using Azure Monitor
 - [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps)
 
+---
+
 ### Create Azure App Service mobile apps
 #### add push notifications for mobile apps
 - [Add push notifications to your Android app](https://docs.microsoft.com/en-us/previous-versions/azure/app-service-mobile/app-service-mobile-android-get-started-push)
@@ -20,11 +22,15 @@
 - [Offline Data Sync in Azure Mobile Apps](https://docs.microsoft.com/en-us/previous-versions/azure/app-service-mobile/app-service-mobile-offline-data-sync)
 #### implement a remote instrumentation strategy for mobile devices
 
+---
+
 ### Create Azure App Service API apps
 #### create an Azure App Service API app
 - [Host a RESTful API with CORS in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api)
 #### create documentation for the API by using open source and other tools
 - [Swagger](https://swagger.io/)
+
+---
 
 ### Implement Azure functions
 #### implement input and output bindings for a function
